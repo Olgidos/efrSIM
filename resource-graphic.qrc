@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Objects/Textures/fascade/Facade01_col.jpg</file>
+        <file>Objects/Textures/fascade/Facade01_disp.jpg</file>
+        <file>Objects/Textures/fascade/Facade01_met.jpg</file>
+        <file>Objects/Textures/fascade/Facade01_nrm.jpg</file>
+        <file>Objects/Textures/fascade/Facade01_rgh.jpg</file>
+        <file>Objects/Textures/cone/orange_stripes.jpg</file>
+        <file>Objects/Textures/cone/orange_stripes.png</file>
+        <file>Objects/carMain.STL</file>
+        <file>Objects/Cone.obj</file>
+        <file>Objects/Wheel.mtl</file>
+        <file>Objects/Textures/no-ao.png</file>
+        <file>Objects/wheelEFR.STL</file>
+        <file>Objects/icons/menu.png</file>
+        <file>Objects/icons/pause.png</file>
+        <file>Objects/icons/play-button.png</file>
+        <file>Objects/icons/repeat.png</file>
+        <file>Objects/icons/setting2s.png</file>
+    </qresource>
+</RCC>

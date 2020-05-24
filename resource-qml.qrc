@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/Viewer">
+        <file>Main.qml</file>
+        <file>Scene.qml</file>
+        <file>Main3D.qml</file>
+        <file>Ground.qml</file>
+        <file>CarMain.qml</file>
+        <file>Wheel.qml</file>
+        <file>Cone.qml</file>
+        <file>Acceltrack.qml</file>
+        <file>ControlTab.qml</file>
+        <file>ControlTabForm.ui.qml</file>
+        <file>Car.qml</file>
+        <file>ValueEntry.qml</file>
+        <file>ValContainer.qml</file>
+        <file>ParameterEntry.qml</file>
+    </qresource>
+    <qresource prefix="/carModel"/>
+    <qresource prefix="/carModel/Model"/>
+    <qresource prefix="/res"/>
+    <qresource prefix="/">
+        <file>TestForm.ui.qml</file>
+    </qresource>
+</RCC>
