@@ -10,7 +10,7 @@ QT += core gui widgets charts qml quick concurrent\
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = awsomeSim
+TARGET = efrSIM
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -47,7 +47,6 @@ SOURCES += \
         Simulation/solids/wheelRL.cpp \
         Simulation/solids/wheelRR.cpp \
         Simulation/solids/wheelbase.cpp \
-        Test/valuetest.cpp \
         Values/parameter.cpp \
         Values/value.cpp \
         main.cpp
