@@ -53,7 +53,7 @@ void SusJointBase::calculate(double timestep){
 //                  * sin( Values::instance().mainEulerZ.getValue() * M_PI / 180.0 + asin(s_wheely/sqrt(pow(s_wheely,2) + pow(s_wheelx,2)))) + s_wheelx)
                   )
             * SolidSpringParameter
-            + (wheel.veloX.val() - carBody.veloX.val()) * 2 * sqrt(SolidSpringParameter + wheel.massComb)*0;
+            + (wheel.veloX.val() - carBody.veloX.val()) * 2 * sqrt(SolidSpringParameter * wheel.massComb);
     forceX.newValue(val, Joint::timestamp + timestep, &lock);
 
     val = (wheel.posY.val() - carBody.posY.val() + s_wheely
@@ -61,7 +61,7 @@ void SusJointBase::calculate(double timestep){
 //             -cos( Values::instance().mainEulerZ.getValue() * M_PI / 180.0 ))
            )
             * SolidSpringParameter
-            + (wheel.veloY.val() - carBody.veloY.val()) * 2 * sqrt(SolidSpringParameter + wheel.massComb);
+            + (wheel.veloY.val() - carBody.veloY.val()) * 2 * sqrt(SolidSpringParameter * wheel.massComb);
     forceY.newValue(val, Joint::timestamp + timestep, &lock);
 
     val = (wheel.posZ.val() - carBody.posZ.val() - (s_wheelz + offsetZ)
@@ -70,12 +70,13 @@ void SusJointBase::calculate(double timestep){
                  - sgn(s_wheely)*(sqrt(pow(s_wheelz,2) + pow(s_wheely,2))
                  * sin( Data::instance().mainEulerX.val() * M_PI / 180.0 + sgn(s_wheelz)*asin(s_wheelz/sqrt(pow(s_wheelz,2) + pow(s_wheely,2)))) - s_wheelz)
              )
-            * SolidSpringParameter
-            + (wheel.veloZ.val() - carBody.veloZ.val()) * 2 * sqrt(SolidSpringParameter + wheel.massComb);
+            * Data::instance().wheelSusRealc.val()
+            + (wheel.veloZ.val() - carBody.veloZ.val()) * Data::instance().wheelSusReald.val();
     forceZ.newValue(val, Joint::timestamp + timestep, &lock);
 
     torqueX.newValue(0.0, Joint::timestamp + timestep, &lock);
-    //torqueY.newValue(-wheel.MotorTorque.val(), Joint::timestamp + timestep, &lock);
+//    torqueY.newValue(-wheel.MotorTorque.val(), Joint::timestamp + timestep, &lock);
+    torqueY.newValue(0.0, Joint::timestamp + timestep, &lock);
     torqueZ.newValue(0.0, Joint::timestamp + timestep, &lock);
     postCalculate(timestep);
 }

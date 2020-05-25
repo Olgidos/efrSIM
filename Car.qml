@@ -53,9 +53,9 @@ Entity {
         pos.translation.y:  r__Mainbody_z.value
         pos.translation.z:  -r__Mainbody_y.value
 
-        pos.rotationX: rot_Mainbody_y.value
-        pos.rotationY: rot_Mainbody_z.value
-        pos.rotationZ: -rot_Mainbody_x.value
+        pos.rotationX: rot_Mainbody_z.value
+        pos.rotationY: rot_Mainbody_x.value
+        pos.rotationZ: -rot_Mainbody_y.value
 
     }
 }

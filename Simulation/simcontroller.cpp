@@ -229,11 +229,11 @@ void SimController::run(){
             }
 
             calculationTimePerStep.clearHistory(0.0,0.0,this);
-            Data::instance().total_energy.clearHistory(0.0,-1,this);
-            Data::instance().total_energyFlow.clearHistory(0.0,-1,this);
-            Data::instance().difference_energy.clearHistory(0.0,-1,this);
+            Data::instance().total_energy.clearHistory(0.0,Data::instance().initTimestep.val(),this);
+            Data::instance().total_energyFlow.clearHistory(0.0,Data::instance().initTimestep.val(),this);
+            Data::instance().difference_energy.clearHistory(0.0,Data::instance().initTimestep.val(),this);
 
-            displayTime.setValue(-1.0);
+            displayTime.setValue(Data::instance().initTimestep.val());
             setReset(false);
         }
 
@@ -339,27 +339,48 @@ void SimController::writeCSV() {
         names.push_back(value->getName());
     }
 
-    QFile file("C:/Users/The Olg/Desktop/text.txt");
-          if(file.open(QIODevice::WriteOnly | QIODevice::Text))
-          {
-              // We're going to streaming text to the file
-              QTextStream stream(&file);
+      QFile file("./efrSIM_output.csv");
+      file.open(QIODevice::WriteOnly);
 
-              for(QString name : names) {
-                  stream << name << ",";
-              }
+          // We're going to streaming text to the file
+          QTextStream stream(&file);
 
-              int l = histories.begin()->length();
+          stream << "t" << ",";
+          for(QString name : names) {
+              stream << name << ",";
+          }
 
-              for(int i = 0; i < l; l++) {
+          stream << "\n";
+
+          long l = histories.begin()->length();
+          long delay = 0;
+          qDebug() << "Total data rows " << l << " columns " << names.length();
+          qDebug() << "Writing CSV output";
+
+
+          for(int i = 0; i < l; i++) {
+
+              if( i >= delay){
+
+                  stream << histories.begin()->at(i).x() << ",";
                   for(QVector<QPointF> history : histories) {
                       stream << history.at(i).y() << ",";
                   }
+                  stream << "\n";
+                  delay += 500;
+                  qDebug() << "Data row finished" << i;
               }
 
-              file.close();
-              qDebug() << "Writing finished";
           }
+
+
+          stream << histories.begin()->last().x() << ",";
+          for(QVector<QPointF> history : histories) {
+              stream << history.last().y() << ",";
+          }
+          file.close();
+          qDebug() << "Writing finished!";
+
 }
 
 
