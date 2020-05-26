@@ -17,5 +17,6 @@
         <file>Objects/icons/play-button.png</file>
         <file>Objects/icons/repeat.png</file>
         <file>Objects/icons/setting2s.png</file>
+        <file>icon.ico</file>
     </qresource>
 </RCC>
