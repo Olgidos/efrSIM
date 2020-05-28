@@ -167,10 +167,10 @@ Solid* Mainbody::calculateAcceleration(double timestep) {
                     / J_combX;
 
     nextAngularAccel[1] = (vals.wheelSusFLTorqueY.val() + vals.wheelSusFRTorqueY.val() + vals.wheelSusRLTorqueY.val() + vals.wheelSusRRTorqueY.val()
-                           + vals.wheelSusFLForceX.val() * vals.wheelFL_sz.val()
-                           + vals.wheelSusFRForceX.val() * vals.wheelFR_sz.val()
-                           + vals.wheelSusRLForceX.val() * vals.wheelRL_sz.val()
-                           + vals.wheelSusRRForceX.val() * vals.wheelRR_sz.val()
+                           + vals.wheelSusFLForceX.val() * (-posZ.val() )
+                           + vals.wheelSusFRForceX.val() * (-posZ.val() )
+                           + vals.wheelSusRLForceX.val() * (-posZ.val() )
+                           + vals.wheelSusRRForceX.val() * (-posZ.val() )
 
                            - vals.wheelSusFLForceZ.val() * vals.wheelFL_sx.val()
                            - vals.wheelSusFRForceZ.val() * vals.wheelFR_sx.val()

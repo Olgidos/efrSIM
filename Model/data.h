@@ -34,8 +34,8 @@ class Data
 
      //Joints
 
-       wheelSusRealc              { 100000, "c__RealSuspension_z", "N/m", "Joint Suspension"},
-       wheelSusReald              { 1000, "d__RealSuspension_z", "kg/s", "Joint Suspension"},
+       wheelSusRealc              { 17000, "c__RealSuspension_z", "N/m", "Joint Suspension"},
+       wheelSusReald              { 100, "d__RealSuspension_z", "kg/s", "Joint Suspension"},
 
      //WheelFL - SuspensionFL
        wheelSusFL_sx              { 0.799, "s__Suspension_x_1", "m", "Joint Suspension 1 (FL)"},
@@ -108,22 +108,22 @@ class Data
        powerMotorFL               { "P__Motor_1", "W", "Motors", displayTime},
        torqueMotorEnabledFL       { 1.0, "MotorEnabled_1", " ", "Motors"},
        torqueMotorMaxFL           { 350.0, "M__MotorMax_1", "Nm", "Motors"},
-       powerMotorMaxFL            { 20000.0, "P__MotorMax_1", "W", "Motors"},
+       powerMotorMaxFL            { 17000.0, "P__MotorMax_1", "W", "Motors"},
        torqueMotorFR              { "M__Motor_4", "N", "Motors", displayTime},
        powerMotorFR               { "P__Motor_4", "W", "Motors", displayTime},
        torqueMotorEnabledFR       { 1.0, "MotorEnabled_4", " ", "Motors"},
        torqueMotorMaxFR           { 350.0, "M__MotorMax_4", "Nm", "Motors"},
-       powerMotorMaxFR            { 20000.0, "P__MotorMax_4", "W", "Motors"},
+       powerMotorMaxFR            { 17000.0, "P__MotorMax_4", "W", "Motors"},
        torqueMotorRL              { "M__Motor_2", "N", "Motors", displayTime},
        powerMotorRL               { "P__Motor_2", "W", "Motors", displayTime},
        torqueMotorEnabledRL       { 1.0, "MotorEnabled_2", " ", "Motors"},
        torqueMotorMaxRL           { 350.0, "M__MotorMax_2", "Nm", "Motors"},
-       powerMotorMaxRL            { 20000.0, "P__MotorMax_2", "W", "Motors"},
+       powerMotorMaxRL            { 17000.0, "P__MotorMax_2", "W", "Motors"},
        torqueMotorRR              { "M__Motor_3", "N", "Motors", displayTime},
        powerMotorRR               { "P__Motor_3", "W", "Motors", displayTime},
        torqueMotorEnabledRR       { 1.0, "MotorEnabled_3", "", "Motors"},
        torqueMotorMaxRR           { 350.0, "M__MotorMax_3", "Nm", "Motors"},
-       powerMotorMaxRR            { 20000.0, "P__MotorMax_3", "W", "Motors"},
+       powerMotorMaxRR            { 17000.0, "P__MotorMax_3", "W", "Motors"},
 
        //MotorController
        MotorC_keff                { 0.15, "κ__keff", " ", "Motor Controller"},
@@ -386,7 +386,7 @@ class Data
 
        sxDriver                   { 0.05, "s__Driver_x", "m", "Solid Mainbody"},
        syDriver                   { 0.00, "s__Driver_y", "m", "Solid Mainbody"},
-       szDriver                   { 0.012, "s__Driver_z", "m","Solid Mainbody"},
+       szDriver                   { 0.1, "s__Driver_z", "m","Solid Mainbody"},
 
        main_JX                    { 32.487, "J__Mainbody_x", "kg*m^2", "Solid Mainbody"},
        main_JY                    { 41.1, "J__Mainbody_y", "kg*m^2", "Solid Mainbody"},
@@ -457,7 +457,7 @@ class Data
        p_Vx2                      { 0.000 , "p__Vx2", " ", "MFT Parameter"},
        //Scaling Factors
        l_Cx                       { 1.000 , "lambda__Cx", " ", "MFT Parameter"},
-       l_Mux                      { 0.500 , "lambda__ux", " ", "MFT Parameter"},
+       l_Mux                      { 0.53 , "lambda__ux", " ", "MFT Parameter"},
        l_Ex                       { 1.000 , "lambda__Ex", " ", "MFT Parameter"},
        l_KxK                      { 1.000 , "lambda__Kxk", " ", "MFT Parameter"},
        l_Hx                       { 0.000 , "lambda__Hx", " ", "MFT Parameter"},

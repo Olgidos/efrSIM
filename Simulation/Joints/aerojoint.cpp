@@ -19,12 +19,12 @@ void AeroJoint::calculateEnergy(double timestep) {
 
 void AeroJoint::calculate(double timestep){
     double force = 0.5 * Data::instance().aero_roh.val() * Data::instance().aero_A.val()
-                    *carbody.veloX.val() * carbody.veloX.val() * Data::instance().aero_cd.val();
+                    *carbody.veloX.val() * carbody.veloX.val() * (Data::instance().aero_cd.val() + carbody.eulerY.val() * 0.06);
 
     aeroFx.newValue(force, timestep + timestamp, &lock);
 
     force = -0.5 * Data::instance().aero_roh.val() * Data::instance().aero_A.val()
-                        *carbody.veloX.val() * carbody.veloX.val() * Data::instance().aero_cl.val();
+                        *carbody.veloX.val() * carbody.veloX.val() * (Data::instance().aero_cl.val() + carbody.eulerY.val() * 0.06 );
 
     aeroFz.newValue(force, timestep + timestamp, &lock);
 }
