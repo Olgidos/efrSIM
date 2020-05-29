@@ -139,7 +139,7 @@ class Data
        motorCRR_e                 { "e__3", " ", "Motor Controller", displayTime},
 
      //Wheel Front Left
-       wheelFL_sx                 { 0.799, "s__Wheel_x_1", "m", "Solid Wheel 1 (FL)"},
+       wheelFL_sx                 { 0.804, "s__Wheel_x_1", "m", "Solid Wheel 1 (FL)"},
        wheelFL_sy                 { 0.600, "s__Wheel_y_1", "m", "Solid Wheel 1 (FL)"},
        wheelFL_sz                 { 0.05, "s__Wheel_z_1", "m", "Solid Wheel 1 (FL)"},
 
@@ -200,7 +200,7 @@ class Data
        wheelFLDisplacementWheelToBody {"WheelFL_DisplacementWheelToBody", "mm", "Solid Wheel 1 (FL)", displayTime},
 
      //Wheel Front Right
-       wheelFR_sx                 { 0.799, "s__Wheel_x_4", "m", "Solid Wheel 4 (FR)"},
+       wheelFR_sx                 { 0.804, "s__Wheel_x_4", "m", "Solid Wheel 4 (FR)"}, //799
        wheelFR_sy                 { -0.6, "s__Wheel_y_4", "m", "Solid Wheel 4 (FR)"},
        wheelFR_sz                 { 0.05, "s__Wheel_z_4", "m", "Solid Wheel 4 (FR)"},
 
@@ -259,7 +259,7 @@ class Data
        wheelFRMoverturningCoupleX { "M__MFT_x_4", "Nm", "Solid Wheel 4 (FR)", displayTime},
 
      //Wheel Rear Left
-       wheelRL_sx                 { -0.763, "s__Wheel_x_2", "m", "Solid Wheel 2 (RL)"},
+       wheelRL_sx                 { -0.758, "s__Wheel_x_2", "m", "Solid Wheel 2 (RL)"},
        wheelRL_sy                 { 0.575, "s__Wheel_y_2", "m", "Solid Wheel 2 (RL)"},
        wheelRL_sz                 { 0.05, "s__Wheel_z_2", "m", "Solid Wheel 2 (RL)"},
 
@@ -318,7 +318,7 @@ class Data
        wheelRLMoverturningCoupleX { "M__MFT_x_2", "Nm", "Solid Wheel 2 (RL)", displayTime},
 
      //Wheel Rear Right
-       wheelRR_sx                 { -0.763, "s__Wheel_x_3", "m", "Solid Wheel 3 (RR)"},
+       wheelRR_sx                 { -0.758, "s__Wheel_x_3", "m", "Solid Wheel 3 (RR)"}, //0.763
        wheelRR_sy                 { -0.575, "s__Wheel_y_3", "m", "Solid Wheel 3 (RR)"},
        wheelRR_sz                 { 0.05, "s__Wheel_z_3", "m", "Solid Wheel 3 (RR)"},
 
@@ -386,7 +386,7 @@ class Data
 
        sxDriver                   { 0.05, "s__Driver_x", "m", "Solid Mainbody"},
        syDriver                   { 0.00, "s__Driver_y", "m", "Solid Mainbody"},
-       szDriver                   { 0.1, "s__Driver_z", "m","Solid Mainbody"},
+       szDriver                   { 0.012, "s__Driver_z", "m","Solid Mainbody"},
 
        main_JX                    { 32.487, "J__Mainbody_x", "kg*m^2", "Solid Mainbody"},
        main_JY                    { 41.1, "J__Mainbody_y", "kg*m^2", "Solid Mainbody"},
@@ -457,7 +457,7 @@ class Data
        p_Vx2                      { 0.000 , "p__Vx2", " ", "MFT Parameter"},
        //Scaling Factors
        l_Cx                       { 1.000 , "lambda__Cx", " ", "MFT Parameter"},
-       l_Mux                      { 0.53 , "lambda__ux", " ", "MFT Parameter"},
+       l_Mux                      { 0.6 , "lambda__ux", " ", "MFT Parameter"},
        l_Ex                       { 1.000 , "lambda__Ex", " ", "MFT Parameter"},
        l_KxK                      { 1.000 , "lambda__Kxk", " ", "MFT Parameter"},
        l_Hx                       { 0.000 , "lambda__Hx", " ", "MFT Parameter"},
