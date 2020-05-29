@@ -424,6 +424,8 @@ class Data
        //Aero
        aero_cl                    { -2.0, "C__l", "", "Joint Aerodynamic"},
        aero_cd                    { 0.3, "C__d", "", "Joint Aerodynamic"},
+       aero_clalpha               { 0.06, "C__la", "/°", "Joint Aerodynamic"},
+       aero_cdalpha               { 0.06, "C__da", "/°", "Joint Aerodynamic"},
        aero_A                     { 1.0, "A", "m^2", "Joint Aerodynamic"},
        aero_roh                   { 1.225, "roh", "kg/(m^3)", "Joint Aerodynamic"},
        aeroEnabled                { 1.0, "AeroJointEnabled", "", "Joint Aerodynamic"},
@@ -905,6 +907,8 @@ class Data
     //Aero
     Parameter aero_cl;
     Parameter aero_cd;
+    Parameter aero_clalpha;
+    Parameter aero_cdalpha;
     Parameter aero_A;
     Parameter aero_roh;
     Parameter aeroEnabled;
