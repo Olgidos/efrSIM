@@ -118,12 +118,12 @@ class Data
        powerMotorRL               { "P__Motor_2", "W", "Motors", displayTime},
        torqueMotorEnabledRL       { 1.0, "MotorEnabled_2", " ", "Motors"},
        torqueMotorMaxRL           { 350.0, "M__MotorMax_2", "Nm", "Motors"},
-       powerMotorMaxRL            { 17000.0, "P__MotorMax_2", "W", "Motors"},
+       powerMotorMaxRL            { 19000.0, "P__MotorMax_2", "W", "Motors"},
        torqueMotorRR              { "M__Motor_3", "N", "Motors", displayTime},
        powerMotorRR               { "P__Motor_3", "W", "Motors", displayTime},
        torqueMotorEnabledRR       { 1.0, "MotorEnabled_3", "", "Motors"},
        torqueMotorMaxRR           { 350.0, "M__MotorMax_3", "Nm", "Motors"},
-       powerMotorMaxRR            { 17000.0, "P__MotorMax_3", "W", "Motors"},
+       powerMotorMaxRR            { 19000.0, "P__MotorMax_3", "W", "Motors"},
 
        //MotorController
        MotorC_keff                { 0.15, "κ__keff", " ", "Motor Controller"},
@@ -377,9 +377,9 @@ class Data
        wheelRRMoverturningCoupleX { "M__MFT_x_3", "Nm", "Solid Wheel 3 (RR)", displayTime},
 
      //Main
-       mainInitPosX               { 13.17, "r__Mainbody_x", "m", "Solid Mainbody"},
-       mainInitPosY               { 0.0, "r__Mainbody_y", "m", "Solid Mainbody"},
-       mainInitPosZ               { 0.285, "r__Mainbody_z", "m","Solid Mainbody"},
+       mainInitPosX               { 13.17, "r__Mainbody_x_init", "m", "Solid Mainbody"},
+       mainInitPosY               { 0.0, "r__Mainbody_y_init", "m", "Solid Mainbody"},
+       mainInitPosZ               { 0.285, "r__Mainbody_z_init", "m","Solid Mainbody"},
 
        mainMass                   { 111.38, "m__Mainbody", "kg", "Solid Mainbody"},
        driverMass                 { 53.0, "m__Driver", "kg", "Solid Mainbody"},
@@ -388,9 +388,9 @@ class Data
        syDriver                   { 0.00, "s__Driver_y", "m", "Solid Mainbody"},
        szDriver                   { 0.012, "s__Driver_z", "m","Solid Mainbody"},
 
-       main_JX                    { 32.487, "J__Mainbody_x", "kg*m^2", "Solid Mainbody"},
-       main_JY                    { 41.1, "J__Mainbody_y", "kg*m^2", "Solid Mainbody"},
-       main_JZ                    { 68.289, "J__Mainbody_z", "kg*m^2", "Solid Mainbody"},
+       main_JX                    { 32.487, "J__Mainbody_x_init", "kg*m^2", "Solid Mainbody"},
+       main_JY                    { 41.1, "J__Mainbody_y_init", "kg*m^2", "Solid Mainbody"},
+       main_JZ                    { 68.289, "J__Mainbody_z_init", "kg*m^2", "Solid Mainbody"},
 
        main_mass                  { "m__Mainbody", "kg", "Solid Mainbody", displayTime},
        main_MOIX                  { "J__Mainbody_x", "kg*m^2*°", "Solid Mainbody", displayTime},
@@ -423,9 +423,9 @@ class Data
 
        //Aero
        aero_cl                    { -2.0, "C__l", "", "Joint Aerodynamic"},
-       aero_cd                    { 0.3, "C__d", "", "Joint Aerodynamic"},
+       aero_cd                    { 1.0, "C__d", "", "Joint Aerodynamic"},
        aero_clalpha               { 0.06, "C__la", "/°", "Joint Aerodynamic"},
-       aero_cdalpha               { 0.06, "C__da", "/°", "Joint Aerodynamic"},
+       aero_cdalpha               { 0.08, "C__da", "/°", "Joint Aerodynamic"},
        aero_A                     { 1.0, "A", "m^2", "Joint Aerodynamic"},
        aero_roh                   { 1.225, "roh", "kg/(m^3)", "Joint Aerodynamic"},
        aeroEnabled                { 1.0, "AeroJointEnabled", "", "Joint Aerodynamic"},

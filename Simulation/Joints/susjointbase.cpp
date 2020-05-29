@@ -44,7 +44,7 @@ void SusJointBase::calculate(double timestep){
 
     if(Joint::timestamp < 0){
         //offsetZ += 0.000002 * pow((carBody.posZ.val() - Data::instance().mainInitPosZ.val())*1,1);
-        offsetZ = -0.106 -(carBody.massComb * Data::instance().g.val()) / ( 4 * Data::instance().wheelSusRealc.val()); //-  4*((0.25 *carBody.massComb + wheel.massComb) * Data::instance().g.val()) / ( Data::instance().c_tyre.val()) ;
+        offsetZ = -0.106 -(carBody.massComb * Data::instance().g.val()) / ( 4 * Data::instance().wheelSusRealc.val()); //  4*((0.25 *carBody.massComb + wheel.massComb) * Data::instance().g.val()) / ( Data::instance().c_tyre.val()) ;
         //offsetZ=0;
         //qDebug()<< offsetZ;
     }
