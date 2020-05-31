@@ -12,7 +12,7 @@
 
 #include <Model/data.h>
 #include <Simulation/simcontroller.h>
-#include <Simulation/solids/Moduls/MFTModul.h>
+#include <Simulation/Solids/Moduls/MFTModul.h>
 
 
 void addProperty(const QString name, QObject *obj);

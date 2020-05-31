@@ -1,7 +1,7 @@
 #ifndef WHEELBASE_H
 #define WHEELBASE_H
 
-#include <Simulation/Base/Solid.h>
+#include <Simulation/Base/solid.h>
 #include <math.h>
 
 //List of Initial Parameters
