@@ -1,5 +1,5 @@
 #include "joint.h"
-#include <Simulation/Base/Solid.h>
+#include <Simulation/Base/solid.h>
 
 Joint::Joint( Parameter &i_enabled, Value &i_energyFlow ) :
           energyFlow(i_energyFlow),

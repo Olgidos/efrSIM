@@ -41,12 +41,12 @@ SOURCES += \
         Simulation/Joints/susjointRR.cpp \
         Simulation/Joints/susjointbase.cpp \
         Simulation/simcontroller.cpp \
-        Simulation/solids/mainbody.cpp \
-        Simulation/solids/wheelFR.cpp \
-        Simulation/solids/wheelFl.cpp \
-        Simulation/solids/wheelRL.cpp \
-        Simulation/solids/wheelRR.cpp \
-        Simulation/solids/wheelbase.cpp \
+        Simulation/Solids/mainbody.cpp \
+        Simulation/Solids/wheelFR.cpp \
+        Simulation/Solids/wheelFl.cpp \
+        Simulation/Solids/wheelRL.cpp \
+        Simulation/Solids/wheelRR.cpp \
+        Simulation/Solids/wheelbase.cpp \
         Values/parameter.cpp \
         Values/value.cpp \
         main.cpp
@@ -56,6 +56,7 @@ HEADERS += \
     Simulation/Base/joint.h \
     Simulation/Base/solid.h \
     Simulation/Joints/aerojoint.h \
+    Simulation/Joints/motorjointFL.h \
     Simulation/Joints/motorjointFL.h \
     Simulation/Joints/motorjointFR.h \
     Simulation/Joints/motorjointRL.h \
@@ -67,13 +68,13 @@ HEADERS += \
     Simulation/Joints/susjointRR.h \
     Simulation/Joints/susjointbase.h \
     Simulation/simcontroller.h \
-    Simulation/solids/Moduls/MFTModul.h \
-    Simulation/solids/mainbody.h \
-    Simulation/solids/wheelFL.h \
-    Simulation/solids/wheelFR.h \
-    Simulation/solids/wheelRL.h \
-    Simulation/solids/wheelRR.h \
-    Simulation/solids/wheelbase.h \
+    Simulation/Solids/Moduls/MFTModul.h \
+    Simulation/Solids/mainbody.h \
+    Simulation/Solids/wheelFL.h \
+    Simulation/Solids/wheelFR.h \
+    Simulation/Solids/wheelRL.h \
+    Simulation/Solids/wheelRR.h \
+    Simulation/Solids/wheelbase.h \
     Values/parameter.h \
     Values/value.h \
     Values/valuebase.h \

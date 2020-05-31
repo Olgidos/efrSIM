@@ -1,5 +1,5 @@
 #include "wheelbase.h"
-#include <Simulation/solids/Moduls/MFTModul.h>
+#include <Simulation/Solids/Moduls/MFTModul.h>
 
 WheelBase::WheelBase(   	 Parameter &i_sx,
                              Parameter &i_sy,

@@ -1,5 +1,5 @@
 #include <Simulation/Solids/wheelFL.h>
-#include <Simulation/solids/Moduls/MFTModul.h>
+#include <Simulation/Solids/Moduls/MFTModul.h>
 
 WheelFL::WheelFL():
          WheelBase(    Data::instance().wheelFL_sx,

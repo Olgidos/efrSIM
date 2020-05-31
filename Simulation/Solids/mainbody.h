@@ -1,7 +1,7 @@
 #ifndef CARBODY_H
 #define CARBODY_H
 
-#include <Simulation/Base/Solid.h>
+#include <Simulation/Base/solid.h>
 #include <math.h>
 
 class Mainbody : public Solid

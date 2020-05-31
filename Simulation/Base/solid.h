@@ -4,7 +4,7 @@
 #include <qthread.h>
 #include <Qt3DCore>
 
-#include <Simulation/Base/Joint.h>
+#include <Simulation/Base/joint.h>
 #include <Values/parameter.h>
 #include <Values/value.h>
 #include <Model/data.h>
