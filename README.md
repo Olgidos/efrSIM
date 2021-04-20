@@ -1,6 +1,8 @@
 # efrSIM
 
-Windows executable: https://drive.google.com/file/d/1u1It1q67IVsat86v-1ji2af1QlKqGXJ7/view?usp=sharing
+![plot](./image1.jpg)
+
+Windows executable under release
 
 A detailed explaination is provided in thesis_efrSIM.pdf
 
